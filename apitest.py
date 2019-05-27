@@ -6,7 +6,7 @@ import sys
 
 parameters = {"X-CoinAPI-Key":"8CFD1A47-9381-4B96-BB8E-8E1421DCF137"}
 
-response = requests.get("https://rest.coinapi.io/v1/exchanges",params=parameters)
+response = requests.get("https://rest.coinapi.io/v1/exchanges",headers=parameters)
 
 print(response.status_code)
 
@@ -14,8 +14,8 @@ print(response.status_code)
 
 data = response.json()
 
-print(data)
+data=pd.read_json(json.dumps(data))
 
 print(type(data))
 
-pd.read_json(json.dumps(data)).to_csv("apitest.csv")
+print(data.columns)
