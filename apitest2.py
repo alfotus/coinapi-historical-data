@@ -24,6 +24,6 @@ folderpath=os.path.abspath(codedirectory)+"/"+splittedsymbol+"/"
 if not os.path.exists(folderpath):
 	os.mkdir(folderpath)
 
-fullpath=os.path.abspath(codedirectory)+"/"+splittedsymbol+"/"+"BINANCE_SPOT_ETH_BTC"+".csv"
+fullpath=folderpath+"BINANCE_SPOT_ETH_BTC"+".csv"
 #print(fullpath)
 data.to_csv(fullpath)
