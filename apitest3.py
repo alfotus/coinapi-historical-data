@@ -12,9 +12,3 @@ for x in response.json():
 	count+=1
 
 print(count)
-
-codedirectory=os.path.dirname(sys.argv[0])
-folderpath=os.path.abspath(codedirectory)+"\\ITBIT\\"
-
-print(codedirectory)
-print(folderpath)
