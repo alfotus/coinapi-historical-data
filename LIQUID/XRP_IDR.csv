@@ -1,0 +1,2 @@
+,price_close,price_high,price_low,price_open,time_close,time_open,time_period_end,time_period_start,trades_count,volume_traded
+0,1.00001,1.9,1.00001,1.9,2018-09-20T14:48:11.0000000Z,2018-09-20T14:48:11.0000000Z,2018-09-20T15:00:00.0000000Z,2018-09-20T14:00:00.0000000Z,2,52
