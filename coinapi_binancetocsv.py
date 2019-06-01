@@ -22,7 +22,7 @@ def getdata(listx):
 		data.to_csv(fullpath)
 
 def main():
-	response=requests.get("https://rest.coinapi.io/v1/symbols?filter_symbol_id=BINANCE",headers=hdr)
+	response=requests.get("https://rest.coinapi.io/v1/symbols?filter_symbol_id=BINANCE_SPOT",headers=hdr)
 	symbollist=[]
 	for x in response.json():
 		symbollist.append(x["symbol_id"])

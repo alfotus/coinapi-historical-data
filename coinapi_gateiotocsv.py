@@ -7,7 +7,7 @@ import sys
 import multiprocessing as mp
 
 global hdr
-hdr = {"X-CoinAPI-Key":"EEE24F5A-E27A-4544-A069-9E101F86A87E"}
+hdr = {"X-CoinAPI-Key":"AF52C2E5-245A-4B43-A253-F56F3193AB3E"}
 
 def getdata(listx):
 		response = requests.get("https://rest.coinapi.io/v1/ohlcv/{}/history?period_id=1HRS&time_start=2018-06-01T00:00:00&time_end=2019-06-01T00:00:00&limit=10000".format(listx),headers=hdr)
@@ -22,7 +22,7 @@ def getdata(listx):
 		data.to_csv(fullpath)
 
 def main():
-	response=requests.get("https://rest.coinapi.io/v1/symbols?filter_symbol_id=GATEIO",headers=hdr)
+	response=requests.get("https://rest.coinapi.io/v1/symbols?filter_symbol_id=GATEIO_SPOT",headers=hdr)
 	symbollist=[]
 	for x in response.json():
 		symbollist.append(x["symbol_id"])
