@@ -2,7 +2,7 @@ import requests
 import os
 import sys
 
-parameters = {"X-CoinAPI-Key":"5D6118EA-5D9E-44A6-9E2E-274893915C43"}
+parameters = {"X-CoinAPI-Key":"B0357E04-98ED-42EE-B1B4-2DA64FC19ED6"}
 
 inputted_symbol=input("\nBINANCE, KRAKEN, BITSTAMP, BITFINEX,\nBITFLYER, GEMINI, BITTREX, ITBIT,\nPOLONIEX, LIQUID, UPBIT, GATEIO\n or MANY OTHERS.....\n\nPlease enter desired exchanges from above: ").upper()
 
