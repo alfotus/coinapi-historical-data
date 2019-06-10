@@ -7,10 +7,10 @@ import sys
 import multiprocessing as mp
 
 global hdr
-hdr = {"X-CoinAPI-Key":"E5A0F80E-A204-4610-8045-82473085C801"}
+hdr = {"X-CoinAPI-Key":"D75527AA-7A13-40E7-96BB-48E3ABBAF12A"}
 
 def getdata(listx):
-		response = requests.get("https://rest.coinapi.io/v1/ohlcv/{}/history?period_id=1HRS&time_start=2018-06-01T00:00:00&time_end=2019-06-01T00:00:00&limit=10000".format(listx),headers=hdr)
+		response = requests.get("https://rest.coinapi.io/v1/ohlcv/{}/history?period_id=1DAY&time_start=2018-12-31T00:00:00&time_end=2019-06-01T00:00:00&limit=10000".format(listx),headers=hdr)
 		print("{} retrieved successfully.".format(listx))
 		data=pd.read_json(json.dumps(response.json()))
 		codedirectory=os.path.dirname(sys.argv[0])
