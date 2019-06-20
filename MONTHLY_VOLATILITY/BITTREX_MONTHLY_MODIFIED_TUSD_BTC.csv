@@ -1,0 +1,7 @@
+,time,rv
+0,"DatetimeIndex(['2019-06-15'], dtype='datetime64[ns]', name='time_period_start', freq=None)",80.86699530165288
+1,"DatetimeIndex(['2019-05-15'], dtype='datetime64[ns]', name='time_period_start', freq=None)",78.66892124804295
+2,"DatetimeIndex(['2019-04-15'], dtype='datetime64[ns]', name='time_period_start', freq=None)",67.241122907936
+3,"DatetimeIndex(['2019-03-15'], dtype='datetime64[ns]', name='time_period_start', freq=None)",53.56219165840929
+4,"DatetimeIndex(['2019-02-15'], dtype='datetime64[ns]', name='time_period_start', freq=None)",36.618841640868396
+5,"DatetimeIndex(['2019-01-15'], dtype='datetime64[ns]', name='time_period_start', freq=None)",88.39779247440512
